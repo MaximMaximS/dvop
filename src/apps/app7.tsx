@@ -45,7 +45,7 @@ export default function App7() {
           onChange={(e) => {
             const expr = e.target.value;
             // eval like a true sigma
-            setResult(eval(expr));
+            setResult(eval(expr).toString());
           }}
         />
         <p> = {result}</p>
