@@ -3,8 +3,6 @@
 import { useState } from "react";
 import { getResponse } from "./chatlib";
 
-// Design a ChatGPT like chat interface, with history of messages, an input field, and a submit button, in a form.
-
 export default function Chat() {
   const [history, setHistory] = useState([] as { role: string; content: string }[]);
   const [input, setInput] = useState("");
