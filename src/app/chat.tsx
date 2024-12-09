@@ -6,7 +6,6 @@ import { getResponse } from "./chatlib";
 export default function Chat() {
   const [history, setHistory] = useState([] as { role: string; content: string }[]);
   const [input, setInput] = useState("");
-  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
   return (
